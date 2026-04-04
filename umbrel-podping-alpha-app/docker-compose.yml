@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: umbrel-podping-alpha-app_web_1
+      APP_PORT: 8089
+
+  web:
+    image: ericpp/gossip-listener@sha256:96121be6200a711d5f70548fe19ec96772af53b2b37bf1c4308a492ddc9daa08
+    entrypoint: ["/data/init.sh"]
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    user: "1000:1000"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
