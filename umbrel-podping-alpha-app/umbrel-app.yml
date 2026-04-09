@@ -3,7 +3,7 @@ id: umbrel-podping-alpha-app
 category: social
 name: Podping Alpha
 icon: https://raw.githubusercontent.com/ericpp/umbrel-podping-alpha/master/icon.png
-version: "0.5.5.1"
+version: "0.5.9"
 tagline: Podping
 description: Podping
 developer: podcastindex
