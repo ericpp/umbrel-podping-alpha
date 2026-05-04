@@ -6,4 +6,4 @@ fi
 
 export SSE_ENABLED=1
 
-exec /usr/local/bin/gossip-listener
+exec /app/gossip-listener
