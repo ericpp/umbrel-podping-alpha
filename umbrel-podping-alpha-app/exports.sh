@@ -1,10 +1,10 @@
-UMBREL_DATA_DIR="${UMBREL_ROOT}/data"
+echo "umbrel data dir: $EXPORTS_APP_DIR"
 
-echo "umbrel data dir: $UMBREL_DATA_DIR"
+ls -la $EXPORTS_APP_DIR
 
-if [ -f "${UMBREL_DATA_DIR}/node_friendly_name.txt" ]; then
+if [ -f "${EXPORTS_APP_DIR}/data/node_friendly_name.txt" ]; then
     # Use 'read' to safely read the first line
-    read -r NODE_FRIENDLY_NAME < "${UMBREL_DATA_DIR}/node_friendly_name.txt"
+    read -r NODE_FRIENDLY_NAME < "${EXPORTS_APP_DIR}/data/node_friendly_name.txt"
     export NODE_FRIENDLY_NAME
     echo "Node friendly name: $NODE_FRIENDLY_NAME"
 fi
