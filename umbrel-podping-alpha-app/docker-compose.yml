@@ -19,3 +19,6 @@ services:
     read_only: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
+    environment:
+      NODE_FRIENDLY_NAME: "${APP_NODE_FRIENDLY_NAME}"
+      SSE_ENABLED: "1"
