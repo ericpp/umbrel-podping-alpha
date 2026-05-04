@@ -7,7 +7,7 @@ services:
       APP_PORT: 8089
 
   web:
-    image: ericpp/gossip-listener@sha256:f8c44bf200dd0e8d23c57c2c5d7ac92b3dc13f45e086850396a6b6e36128e225
+    image: ericpp/podping-gossip-listener:latest@sha256:d0c0600165b9044ba0cfe645e072d6e3a02a3bf9ae3f6e0fc99b30c0b3fffea6
     entrypoint: ["/data/init.sh"]
     init: true
     restart: on-failure
