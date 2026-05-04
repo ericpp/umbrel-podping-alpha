@@ -8,6 +8,7 @@ services:
 
   web:
     image: ericpp/podping-gossip-listener:latest@sha256:d0c0600165b9044ba0cfe645e072d6e3a02a3bf9ae3f6e0fc99b30c0b3fffea6
+    init: true
     working_dir: /data
     restart: on-failure
     stop_grace_period: 1m
