@@ -3,7 +3,7 @@ id: umbrel-podping-alpha-app
 category: social
 name: Podping Gossip Watcher
 icon: https://raw.githubusercontent.com/ericpp/umbrel-podping-alpha/master/icon.png
-version: "0.9.0.0"
+version: "0.12.0.0"
 tagline: Podping
 description: Podping
 developer: podcastindex
