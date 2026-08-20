@@ -7,7 +7,7 @@ services:
       APP_PORT: 8089
 
   web:
-    image: ericpp/podping-gossipwatcher:latest@sha256:a388a8ac08f4b860e2fca8c0de2b2ca03506e48bcce12b8d52bbd46827f0f19a
+    image: ericpp/podping-gossipwatcher@sha256:c8c17adc451db3e40456ef09d4945eda1f309950567b362da2460daf967a213a
     init: true
     working_dir: /data
     restart: on-failure
@@ -23,3 +23,9 @@ services:
     environment:
       NODE_FRIENDLY_NAME: "${APP_NODE_FRIENDLY_NAME}"
       SSE_ENABLED: "1"
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
