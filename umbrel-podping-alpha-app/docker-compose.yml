@@ -7,7 +7,7 @@ services:
       APP_PORT: 8089
 
   web:
-    image: ericpp/podping-gossipwatcher@sha256:58161188fa67d471bf3145e05e705d3fe7cb8674228a05eb9349d474b5785db1
+    image: ericpp/podping-gossipwatcher@sha256:1044a7cb288579df59cbb7f062822761ab85b30b013bfb1730a993e5d51497eb
     init: true
     working_dir: /data
     restart: on-failure
